@@ -4,6 +4,8 @@ import { setupPlayer } from './demoPlayer.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
+    <audio id='audio' controls></audio>
+
     <input id='url-input' placeholder="Url to hls playlist" style='width: 800px'></input>
     
     <div style='margin-top: 20px'>
@@ -15,6 +17,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupPlayer(
+  document.querySelector<HTMLAudioElement>('#audio')!,
   document.querySelector<HTMLButtonElement>('#play-btn')!,
   document.querySelector<HTMLButtonElement>('#stop-btn')!,
   document.querySelector<HTMLButtonElement>('#clear-btn')!,

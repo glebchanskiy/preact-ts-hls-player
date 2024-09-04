@@ -5,9 +5,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'vanilla-ts-hls-player',
+      name: 'preact-hls-player',
       fileName: 'index',
-      formats: ['es', 'cjs']
+      // formats: ['es', 'cjs']
     },
     rollupOptions: {
       external: [],
@@ -22,5 +22,4 @@ export default defineConfig({
       include: ['src/index.ts']
     })
   ]
-
 });
