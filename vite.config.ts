@@ -5,7 +5,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'preact-hls-player',
+      name: 'preact-ts-hls-player',
       fileName: 'index',
       // formats: ['es', 'cjs']
     },
@@ -19,7 +19,7 @@ export default defineConfig({
   plugins: [
     dts({
       insertTypesEntry: true,
-      include: ['src/index.ts']
+      include: ['src/index.ts', 'src/lib']
     })
   ]
 });
