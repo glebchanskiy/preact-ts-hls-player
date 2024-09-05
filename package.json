@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-ts-hls-player",
+  "name": "preact-ts-hls-player",
   "private": true,
   "version": "0.0.1",
   "type": "module",
